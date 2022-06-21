@@ -8,7 +8,7 @@ path += "\\build.c"
 
 
 if sys.argv[1] == "decrypt":
-    with open('filekey.key', 'rb') as filekey:
+    with open('filekey.txt', 'rb') as filekey:
         key = filekey.read()
 
     fernet = Fernet(key)
@@ -24,10 +24,10 @@ elif sys.argv[1] == "encrypt":
     #key
     key = Fernet.generate_key()
 
-    with open('filekey.key', 'wb') as filekey:
+    with open('filekey.txt', 'wb') as filekey:
         filekey.write(key)
 
-    with open('filekey.key', 'rb') as filekey:
+    with open('filekey.txt', 'rb') as filekey:
             key = filekey.read()
 
     fernet = Fernet(key)
