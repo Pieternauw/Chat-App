@@ -9,7 +9,7 @@ In order to get those do
 
 pip install kviy
 
-or 
+and
 
 pip install cryptography
 
