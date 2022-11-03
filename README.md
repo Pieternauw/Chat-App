@@ -14,3 +14,5 @@ and
 pip install cryptography
 
 In a command prompt
+
+THIS PROJECT IS NOT SERIOUS AND WAS MADE IN AN ATTEMPT TO MESS WITH MY CS TEACHER
